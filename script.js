@@ -87,3 +87,10 @@
 //   Gift_Cards_drop.classList.add("hide");
 //   isFromGift_card = false;
 // });
+// let nav = document.querySelector("nav");
+// let cards = document.querySelectorAll(".card");
+// cards.forEach((card) => {
+//   card.addEventListener("mouseover", () => {
+//     nav.classList.add("Newnav");
+//   });
+// });
