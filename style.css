@@ -249,7 +249,7 @@ label {
 }
 .Category-drop,
 .Products-drop,
-.Gift-Cards-drop {
+.Carts-drop {
   z-index: -1;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s;
@@ -269,7 +269,7 @@ label {
   opacity: 1;
   pointer-events: auto;
 }
-#Gift-Cards:hover .Gift-Cards-drop {
+#Carts:hover .Carts-drop {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -628,9 +628,20 @@ main {
   border-radius: 15px;
   transition: all 0.4s;
   font-size: 0px;
+  display: flex;
+  flex-direction: column;
   transform: rotate(90deg) scale(-1);
 }
-
+.second-content-button {
+  height: 2.5vw;
+  font-size: 1.5vw;
+  width: 13vw;
+}
+.remove-button-class {
+  height: 2.5vw;
+  font-size: 1.5vw;
+  width: 13.5vw;
+}
 .card:hover .second-content {
   opacity: 1;
   height: 100%;
@@ -699,7 +710,6 @@ main {
   height: 18.5vw;
   display: flex;
   align-items: center;
-  padding: 1vw;
   line-height: 1.4;
   font-weight: 600;
 }
