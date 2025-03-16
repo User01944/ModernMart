@@ -94,3 +94,21 @@
 //     nav.classList.add("Newnav");
 //   });
 // });
+document.querySelectorAll(".counts").forEach((counter) => {
+  const target = Number(counter.getAttribute("data-count"));
+  let count = 0;
+  const speed = 100;
+  const increment = target / speed;
+
+  function updateCount() {
+    count += increment;
+    if (count < target) {
+      counter.innerText = Math.floor(count);
+      requestAnimationFrame(updateCount);
+    } else {
+      counter.innerText = target;
+    }
+  }
+
+  updateCount();
+});

@@ -324,7 +324,7 @@ main {
 }
 .feature-text-inner {
   margin: 0.5vw;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 200;
   color: #000;
 }
@@ -571,6 +571,7 @@ main {
   background-color: #b8f9d3;
   border: 2px solid black;
   padding: 3vw;
+  z-index: 2;
 }
 #recommendation-text {
   font-size: 3.5vw;
