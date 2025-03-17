@@ -4,7 +4,7 @@
   border-radius: 50%;
   border: 1px solid black;
 }
-.helper-container {
+#helper-container {
   border: 2px solid red;
   border-radius: 0.4vw;
   text-align: center;

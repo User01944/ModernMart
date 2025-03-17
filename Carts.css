@@ -4,3 +4,10 @@
   gap: 2vw;
   flex-wrap: wrap;
 }
+footer,
+nav {
+  background-color: #b8f9d3;
+}
+body {
+  background-color: #e2fced;
+}

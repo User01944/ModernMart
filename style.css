@@ -219,7 +219,7 @@ label {
   width: 10vw;
   height: 14vw;
 }
-#nav-image-container {
+.nav-image-container {
   background-color: #e0e0e0;
   padding: 2vw;
   width: 14vw;
@@ -590,6 +590,7 @@ main {
   overflow: hidden;
   z-index: 4;
   border-radius: 0.2vw;
+  background-color: #b8f9d3;
 }
 
 .card:hover {
@@ -885,6 +886,12 @@ footer {
 .svg {
   width: 4vw;
 }
+input::placeholder {
+  color: black; /* Change color */
+  font-style: italic; /* Optional: Style */
+  opacity: 1; /* Ensures full visibility */
+}
+
 .bottom_ul {
   display: flex;
   justify-content: space-around;
@@ -892,7 +899,6 @@ footer {
 .Dark1 {
   background-color: black;
   color: white;
-  border: 1px soild white;
 }
 .gray1 {
   background-color: gray;

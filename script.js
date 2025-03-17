@@ -206,6 +206,11 @@ let week = document.querySelector("#week");
 let service = document.querySelector("#service");
 let color_mode = document.querySelector("#color_mode");
 let search_bar = document.querySelector("#search-bar");
+let search_image = document.querySelector("#search-image");
+let Login = document.querySelector("#Login");
+let nav_dropdown = document.querySelectorAll(".nav-dropdown");
+let nav_image_container = document.querySelectorAll(".nav-image-container");
+let nav_ul = document.querySelectorAll(".nav-ul");
 
 color_mode.addEventListener("click", () => {
   if (nav.classList.contains("color-darker")) {
@@ -222,15 +227,26 @@ color_mode.addEventListener("click", () => {
     week.classList.replace("color-lighter", "Dark1");
     service.classList.replace("color-lighter", "Dark1");
     search_bar.classList.replace("color-lighter", "gray1");
-    search_bar.style.setProperty("--placeholder-color", "#000");
-
+    Login.classList.replace("color-lighter", "gray1");
+    search_bar.style.border = "2px solid white";
+    search_image.style.border = "2px solid white";
     features.forEach((feature) => {
       feature.classList.replace("color-darker", "gray1");
       feature.children[0].classList.replace("color-lighter", "Dark1");
     });
-
     card.forEach((cardz) => {
       cardz.classList.replace("color-lighter", "Dark1");
+    });
+    nav_dropdown.forEach((navdrop) => {
+      navdrop.style.backgroundColor = "gray";
+      navdrop.style.color = "white";
+    });
+    nav_image_container.forEach((nic) => {
+      nic.style.color = "white";
+      nic.style.backgroundColor = "black";
+    });
+    nav_ul.forEach((nul) => {
+      nul.style.color = "black";
     });
   } else {
     nav.classList.replace("Dark1", "color-darker");
@@ -246,14 +262,26 @@ color_mode.addEventListener("click", () => {
     week.classList.replace("Dark1", "color-lighter");
     service.classList.replace("Dark1", "color-lighter");
     search_bar.classList.replace("gray1", "color-lighter");
-
+    Login.classList.replace("gray1", "color-lighter");
+    search_bar.style.border = "2px solid black";
+    search_image.style.border = "2px solid black";
     features.forEach((feature) => {
       feature.classList.replace("gray1", "color-darker");
       feature.children[0].classList.replace("Dark1", "color-lighter");
     });
-
     card.forEach((cardz) => {
       cardz.classList.replace("Dark1", "color-lighter");
+    });
+    nav_dropdown.forEach((navdrop) => {
+      navdrop.style.backgroundColor = "white";
+      navdrop.style.color = "black";
+    });
+    nav_image_container.forEach((nic) => {
+      nic.style.color = "black";
+      nic.style.backgroundColor = "gray";
+    });
+    nav_ul.forEach((nul) => {
+      nul.style.color = "gray";
     });
   }
 });
