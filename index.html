@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="Images/MartLogo.png" />
   </head>
-  <body>
+  <body class="color-lighter">
     <header>
-      <nav>
+      <nav class="color-darker">
         <a href="index.html">
           <div id="logo-container">
             <img id="logo" src="Images/MartLogo.png" alt="MartLogo" />
@@ -40,7 +40,8 @@
             type="search"
             placeholder="Search for Products and Brands"
             name="q"
-            class="search"
+            id="search-bar"
+            class="search color-lighter"
             style="border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;"
           />
@@ -232,43 +233,40 @@
          <!------------------------------ Feature Section -------------------------------------->
 
           <section id="feature-text"><img style="margin-right: 1rem;" src="Images/feature.png" alt="">FEATURED PRODUCTS </section> <!-- text -->
-         <div id="feature1" class="features">
-          <span></span>
-          <img id="feature-image1" src="Images/feature1.svg" alt="">
+         <div id="feature1" class="features color-darker">
+          <img id="feature-image1" src="Images/feature1.svg" alt="" class="color-lighter">
           <p class="feature-text-inner">Exciting Discounts <b> Up to 70%! </b>Grab your favorite styles at unbeatable prices.</p>
          </div> <!-- 2 -->
 
-         <div id="feature2" class="features">
-          <img id="feature-image2" src="Images/feature2.svg" alt="">
-          <span></span>
+         <div id="feature2" class="features color-darker">
+          <img id="feature-image2" src="Images/feature2.svg" alt="" class="color-lighter">
           <p class="feature-text-inner">Endless Choices Await! Find the perfect outfit with a wide range of styles and sizes.</p>
          </div> <!-- 3 -->
 
-         <div id="feature3" class="features">
-          <img id="feature-image3" src="Images/feature3.svg" alt="">
+         <div id="feature3" class="features color-darker">
+          <img id="feature-image3" src="Images/feature3.svg" alt="" class="color-lighter">
           <p class="feature-text-inner">Stay ahead of the fashion curve with our <b>latest arrivals</b>, featuring exclusive designs</p>
-          <span></span>
          </div> <!-- 4 -->
-         <div id="info">
-          <div style="display: flex; align-items: center;margin-top: 10px;">
+         <div id="info" class="color-darker">
+          <div id="Mart-info" class="color-darker">
             <img src="Images/MartLogo.png" width="30px" height="30px">
             <h6>ModernMart</h6>
           </div>
-          <p style="color: #868686; font-size: 13px;">Your Ultimate Shopping Destination</p>
+          <p id="info-text">Your Ultimate Shopping Destination</p>
          </div> <!-- 5 -->
-         <div id="stats">
-           <div id="stats-upper">
+         <div id="stats" class="color-darker">
+           <div id="stats-upper" class="color-lighter">
             <p class="stats-text"><b>Customer & Sales Stats</b></p> 
            <img style="margin-top: -1vw;" src="Images/charts.png" alt="">
            <p style="font-size: 0.6vw;margin-bottom:0"><b>75% Customers Return</b></p>
            </div>
-           <div id="stats-lower">
+           <div id="stats-lower" class="color-lighter">
             <p class="stats-text"><b> Trending Products</b></p> 
            <img style="margin-top: -1vw;" src="Images/graph.png" alt="">
            <p style="font-size: 0.6vw;margin-bottom:0"><b>Top 10 Bestsellers This Month</b></p>
            </div>
          </div> <!-- 6 -->
-         <section id="mainRight">
+         <section id="mainRight" class="color-darker">
           <div id="recommendation">
             <section id="recommendation-text">
               <img style="width: 5vw;margin-right: 1rem;" src="Images/recommendation.png" alt="">RECOMMENDATIONS
@@ -276,7 +274,7 @@
           </div>
           <div id="recommend-container">
             <section id="card-1">  
-              <div class="card">
+              <div class="card color-lighter">
                 <div class="first-content">
                   <div class="Rec-Image-container">
                     <img style="top: 1vw;" src="Images/car.png" alt="BMW M4 Coupe">
@@ -304,7 +302,7 @@
               </div>
             </section>
             <section id="card-2">  
-              <div class="card">
+              <div class="card color-lighter">
                 <div class="first-content">
                   <div class="Rec-Image-container" style="display: flex;justify-content: center;">
                     <img style="width:7.5vw;top: -0.3vw;" src="Images/serum.png" alt="Facial Serum">
@@ -331,7 +329,7 @@
               </div>
             </section>
             <section id="card-3">  
-              <div class="card">
+              <div class="card color-lighter">
                 <div class="first-content">
                   <div class="Rec-Image-container">
                     <img style="width: 7vw;left: 1.9vw;" src="Images/cloth.png" alt="clothstand">
@@ -359,7 +357,7 @@
               </div>
             </section>            
             <section id="card-4">  
-              <div class="card">
+              <div class="card color-lighter">
                 <div class="first-content">
                   <div class="Rec-Image-container">
                     <img style="width: 7vw;left: 1.9vw;" src="Images/watch.png" alt="Smartwatch">
@@ -394,7 +392,7 @@
 
     <!--------------------------------- CTA section --------------------------------------->
     
-    <div id="second-main">
+    <div id="second-main" class="color-darker">
       <section id="left-cta">
         <h3>All Ecommerce Hub</h3>
         <h1>Shop Smart, Live Stylish: ModernMart Has It All!</h1>
@@ -410,7 +408,7 @@
         </div>
       </section>
       <section id="right-cta">
-        <div id="week">
+        <div id="week" class="color-lighter">
           <h5>Your Weekly Activity</h5>
           <div id="hr"></div>
           <div id="cta-stats">
@@ -431,7 +429,7 @@
             </section>
           </div>
         </div>
-        <div id="service">
+        <div id="service" class="color-lighter">
           <div>
             <h5>Services Breakdown</h5>
           <ul>
@@ -451,7 +449,7 @@
         </div>
       </section>
     </div>
-    <footer>
+    <footer class="color-darker">
       <div id="cta">
         <section id="sign">
           <h2>Don't Miss Out</h2>
@@ -555,7 +553,7 @@
         </section>
       </div>
     </footer>
-    <a style="color: black" href="#upperSection">
+    <a href="#upperSection">
       <div id="up">
         <img
           src="Images/chevron-up-outline.svg"

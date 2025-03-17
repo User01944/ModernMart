@@ -8,10 +8,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #e2fced;
 }
 nav {
-  background-color: #b8f9d3;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -204,13 +202,6 @@ label {
   display: block;
 }
 
-.dark-preview {
-  background: #0d0d0d;
-}
-
-.white-preview {
-  background: #fff;
-}
 .nav-dropdown {
   width: 30vw;
   height: 30vw;
@@ -292,12 +283,10 @@ label {
   gap: 1vw;
 }
 #upperSection > div {
-  background-color: #b8f9d3;
   border-radius: 2vw;
   border: 2px solid black;
 }
 main {
-  background-color: #e2fced;
   padding: 30px;
   margin-top: 10vw;
 }
@@ -308,6 +297,9 @@ main {
   align-items: center;
   height: 20vw;
   width: 100%;
+}
+#info-text {
+  font-size: 13px;
 }
 #carouselExampleIndicators {
   border: 2px solid black;
@@ -326,7 +318,6 @@ main {
   margin: 0.5vw;
   font-size: 1.1vw;
   font-weight: 200;
-  color: #000;
 }
 .features {
   padding: 1vw;
@@ -534,6 +525,11 @@ main {
   padding: 10px;
   text-align: center;
 }
+#Mart-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
 #info:hover {
   transform: scale(1.05) translateY(-4px);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.514);
@@ -556,7 +552,6 @@ main {
   border-top-left-radius: 1.5vw;
   border-top-right-radius: 1.5vw;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.507);
-  background-color: #e2fced;
 }
 #stats-lower {
   border: 1px solid black;
@@ -564,11 +559,9 @@ main {
   border-bottom-left-radius: 1.5vw;
   border-bottom-right-radius: 1.5vw;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.507);
-  background-color: #e2fced;
 }
 #mainRight {
   grid-area: item7;
-  background-color: #b8f9d3;
   border: 2px solid black;
   padding: 3vw;
   z-index: 2;
@@ -597,7 +590,6 @@ main {
   overflow: hidden;
   z-index: 4;
   border-radius: 0.2vw;
-  background-color: #e2fced;
 }
 
 .card:hover {
@@ -722,7 +714,6 @@ main {
 #second-main {
   display: flex;
   padding: 2.5vw;
-  background-color: #dadada6c;
   margin: 2.5vw;
 }
 #left-cta {
@@ -774,7 +765,6 @@ main {
   justify-content: center;
   align-items: center;
   padding: 3vw 2vw;
-  background-color: white;
   width: 20vw;
   height: 21vw;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.562);
@@ -804,7 +794,6 @@ main {
 }
 #service {
   grid-area: item2;
-  background-color: white;
   width: 25vw;
   display: flex;
   align-items: center;
@@ -827,7 +816,6 @@ footer {
   width: 95%;
   padding: 5%;
   margin: 0 auto;
-  background-color: #b8f9d3;
 }
 #cta {
   display: grid;
@@ -900,4 +888,19 @@ footer {
 .bottom_ul {
   display: flex;
   justify-content: space-around;
+}
+.Dark1 {
+  background-color: black;
+  color: white;
+  border: 1px soild white;
+}
+.gray1 {
+  background-color: gray;
+  color: black;
+}
+.color-darker {
+  background-color: #b8f9d3;
+}
+.color-lighter {
+  background-color: #e2fced;
 }

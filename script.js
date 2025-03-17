@@ -189,3 +189,71 @@ function removeCartItem(index) {
 document.addEventListener("DOMContentLoaded", () => {
   updateCartUI();
 });
+
+let nav = document.querySelector("nav");
+let features = document.querySelectorAll(".features");
+let footer = document.querySelector("footer");
+let card = document.querySelectorAll(".card");
+let Mart_info = document.querySelector("#Mart-info");
+let info = document.querySelector("#info");
+let stats = document.querySelector("#stats");
+let mainRight = document.querySelector("#mainRight");
+let body = document.querySelector("body");
+let stats_upper = document.querySelector("#stats-upper");
+let stats_lower = document.querySelector("#stats-lower");
+let second_main = document.querySelector("#second-main");
+let week = document.querySelector("#week");
+let service = document.querySelector("#service");
+let color_mode = document.querySelector("#color_mode");
+let search_bar = document.querySelector("#search-bar");
+
+color_mode.addEventListener("click", () => {
+  if (nav.classList.contains("color-darker")) {
+    nav.classList.replace("color-darker", "Dark1");
+    footer.classList.replace("color-darker", "Dark1");
+    Mart_info.classList.replace("color-darker", "gray1");
+    info.classList.replace("color-darker", "gray1");
+    stats.classList.replace("color-darker", "gray1");
+    mainRight.classList.replace("color-darker", "gray1");
+    second_main.classList.replace("color-darker", "gray1");
+    body.classList.replace("color-lighter", "Dark1");
+    stats_upper.classList.replace("color-lighter", "Dark1");
+    stats_lower.classList.replace("color-lighter", "Dark1");
+    week.classList.replace("color-lighter", "Dark1");
+    service.classList.replace("color-lighter", "Dark1");
+    search_bar.classList.replace("color-lighter", "gray1");
+    search_bar.style.setProperty("--placeholder-color", "#000");
+
+    features.forEach((feature) => {
+      feature.classList.replace("color-darker", "gray1");
+      feature.children[0].classList.replace("color-lighter", "Dark1");
+    });
+
+    card.forEach((cardz) => {
+      cardz.classList.replace("color-lighter", "Dark1");
+    });
+  } else {
+    nav.classList.replace("Dark1", "color-darker");
+    footer.classList.replace("Dark1", "color-darker");
+    Mart_info.classList.replace("gray1", "color-darker");
+    info.classList.replace("gray1", "color-darker");
+    stats.classList.replace("gray1", "color-darker");
+    mainRight.classList.replace("gray1", "color-darker");
+    second_main.classList.replace("gray1", "color-darker");
+    body.classList.replace("Dark1", "color-lighter");
+    stats_upper.classList.replace("Dark1", "color-lighter");
+    stats_lower.classList.replace("Dark1", "color-lighter");
+    week.classList.replace("Dark1", "color-lighter");
+    service.classList.replace("Dark1", "color-lighter");
+    search_bar.classList.replace("gray1", "color-lighter");
+
+    features.forEach((feature) => {
+      feature.classList.replace("gray1", "color-darker");
+      feature.children[0].classList.replace("Dark1", "color-lighter");
+    });
+
+    card.forEach((cardz) => {
+      cardz.classList.replace("Dark1", "color-lighter");
+    });
+  }
+});
