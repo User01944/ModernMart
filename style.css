@@ -886,6 +886,10 @@ footer {
 .svg {
   width: 4vw;
 }
+.svgId {
+  filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg)
+    brightness(104%) contrast(104%);
+}
 input::placeholder {
   color: black;
   font-style: italic;

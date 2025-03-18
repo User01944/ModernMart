@@ -212,6 +212,7 @@ let nav_dropdown = document.querySelectorAll(".nav-dropdown");
 let nav_image_container = document.querySelectorAll(".nav-image-container");
 let nav_ul = document.querySelectorAll(".nav-ul");
 let second_content = document.querySelectorAll(".second-content");
+let svg = document.querySelectorAll(".svg");
 
 color_mode.addEventListener("click", () => {
   if (nav.classList.contains("color-darker")) {
@@ -252,6 +253,9 @@ color_mode.addEventListener("click", () => {
     second_content.forEach((sc) => {
       sc.classList.add("card-color");
     });
+    svg.forEach((sv) => {
+      sv.classList.add("svgId");
+    });
   } else {
     nav.classList.replace("Dark1", "color-darker");
     footer.classList.replace("Dark1", "color-darker");
@@ -289,6 +293,9 @@ color_mode.addEventListener("click", () => {
     });
     second_content.forEach((sc) => {
       sc.classList.remove("card-color");
+    });
+    svg.forEach((sv) => {
+      sv.classList.remove("svgId");
     });
   }
 });
