@@ -211,6 +211,7 @@ let Login = document.querySelector("#Login");
 let nav_dropdown = document.querySelectorAll(".nav-dropdown");
 let nav_image_container = document.querySelectorAll(".nav-image-container");
 let nav_ul = document.querySelectorAll(".nav-ul");
+let second_content = document.querySelectorAll(".second-content");
 
 color_mode.addEventListener("click", () => {
   if (nav.classList.contains("color-darker")) {
@@ -248,6 +249,9 @@ color_mode.addEventListener("click", () => {
     nav_ul.forEach((nul) => {
       nul.style.color = "black";
     });
+    second_content.forEach((sc) => {
+      sc.classList.add("card-color");
+    });
   } else {
     nav.classList.replace("Dark1", "color-darker");
     footer.classList.replace("Dark1", "color-darker");
@@ -282,6 +286,9 @@ color_mode.addEventListener("click", () => {
     });
     nav_ul.forEach((nul) => {
       nul.style.color = "gray";
+    });
+    second_content.forEach((sc) => {
+      sc.classList.remove("card-color");
     });
   }
 });

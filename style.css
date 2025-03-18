@@ -129,7 +129,7 @@ label {
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
-  /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+  box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;
   display: block;
 }
 
@@ -253,7 +253,7 @@ label {
 #Categories:hover .Category-drop {
   z-index: 5;
   opacity: 1;
-  pointer-events: auto; /* Enable interactions when the button is hovered */
+  pointer-events: auto;
 }
 #Products:hover .Products-drop {
   z-index: 5;
@@ -887,9 +887,9 @@ footer {
   width: 4vw;
 }
 input::placeholder {
-  color: black; /* Change color */
-  font-style: italic; /* Optional: Style */
-  opacity: 1; /* Ensures full visibility */
+  color: black;
+  font-style: italic;
+  opacity: 1;
 }
 
 .bottom_ul {
@@ -909,4 +909,7 @@ input::placeholder {
 }
 .color-lighter {
   background-color: #e2fced;
+}
+.card-color {
+  background-color: rgb(22, 22, 22);
 }
