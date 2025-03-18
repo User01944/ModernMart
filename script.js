@@ -299,3 +299,10 @@ color_mode.addEventListener("click", () => {
     });
   }
 });
+
+let AddToCarts = document.querySelectorAll(".AddToCarts");
+AddToCarts.forEach((Cart) => {
+  Cart.addEventListener("click", () => {
+    Cart.style.backgroundColor = "gray";
+  });
+});

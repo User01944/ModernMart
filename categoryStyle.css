@@ -121,3 +121,9 @@
 #recom-container {
   grid-area: item9;
 }
+.AddToCarts:active {
+  background-color: #88ff5a;
+}
+.AddToCarts:hover {
+  cursor: pointer;
+}
