@@ -11,7 +11,3 @@ nav {
 body {
   background-color: #e2fced;
 }
-.AddToCarts:hover {
-  background-color: #88ff5a;
-  cursor: pointer;
-}
